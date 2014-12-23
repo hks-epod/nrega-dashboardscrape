@@ -76,6 +76,6 @@ for year in years:
                 errors.append([state_code, district_code, block_code, year, url, "NO_ACCESS", ts])
                 fail_count += 1
      
-pd.DataFrame(rows).to_csv('successes.csv', index=False)
-pd.DataFrame(errors).to_csv('errors.csv', index=False)           
+pd.DataFrame(rows).to_csv('./Intermediate/successes.csv', index=False)
+pd.DataFrame(errors).to_csv('./Intermediate/errors.csv', index=False)           
 
